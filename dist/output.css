@@ -1121,8 +1121,13 @@ body {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
+    line-height: normal;
+  }
+
+  #hero p {
+    font-size: 14rem;
   }
 }
 
