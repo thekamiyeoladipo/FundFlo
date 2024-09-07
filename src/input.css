@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter", sans-serif !important;
+}
+
+h1 {
+  font-size: 63px;
+  line-height: 76.24px;
+}
+
+:root {
+    --primary-color: #000C4B;
+    --secondary-color: #0EF0C3;
+    --accent-color: #e74c3c;
+    --background-color: #ECF0F1;
+    --color-black: #0f0f0f;
+    --color-white: #fff;
+}
+
+
+#mobile-menu {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  #mobile-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  
+  .nav {
+    background-color: var(--background-color);
+  }
+
+  #login {
+    border: 1px solid var(--primary-color);
+    color: var(--color-black);
+    border-radius: 20.5px;
+    width: 113px;
+    height: 41px;
+  }
+
+  #signup {
+    width: 113px;
+    height: 41px;
+    border-radius: 20.5px;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+
+  }
+
+  #mobile-menu {
+    background-color: var(--primary-color) !important;
+  }
