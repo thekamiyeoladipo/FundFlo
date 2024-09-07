@@ -1116,6 +1116,14 @@ body {
 #hero h1 {
   color: var(--primary-color);
   font-weight: 700;
+  font-size: 63px;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
 }
 
 #hero p {
