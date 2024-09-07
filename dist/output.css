@@ -1031,6 +1031,7 @@ a {
   transform: translateY(-100%);
   opacity: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  z-index: 99999;
 }
 
 #mobile-menu.show {
@@ -1114,8 +1115,6 @@ body {
 
 #hero h1 {
   color: var(--primary-color);
-  min-width: 525px;
-  min-height: 228px;
   font-weight: 700;
 }
 

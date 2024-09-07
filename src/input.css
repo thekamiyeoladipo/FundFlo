@@ -54,6 +54,8 @@ a {
     transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 99999;
+
   }
   
   #mobile-menu.show {
