@@ -1088,13 +1088,9 @@ a {
 
 /* Hero section  */
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .hero-section {
   padding: 50px 20px;
+  overflow: hidden;
 }
 
 .container {
@@ -1139,8 +1135,8 @@ body {
 }
 
 #hero-btn {
-  width: 328px;
-  height: 72px;
+  width: 300px;
+  height: 70px;
   border-radius: 36px;
   background-color: var(--secondary-color);
   font-size: 30px;
@@ -1180,6 +1176,10 @@ body {
 
   .cta-button {
     margin: 0 auto;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
   }
 }
 
