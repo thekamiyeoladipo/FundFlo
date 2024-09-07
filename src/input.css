@@ -139,8 +139,6 @@ a {
 
   #hero h1 {
     color: var(--primary-color);
-    min-width: 525px;
-    min-height: 228px;
     font-weight: 700;
   }
 
