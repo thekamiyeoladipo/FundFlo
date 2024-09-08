@@ -1219,6 +1219,11 @@ a {
     height: 50px;
   }
 
+  #cta {
+    width: 230px;
+    height: 50px;
+  }
+
   .custom-section::before {
     display: none;
   }
