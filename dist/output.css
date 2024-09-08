@@ -1117,13 +1117,14 @@ a {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 45px;
+    font-size: 43px;
     font-weight: 700;
     line-height: normal;
   }
 
   #hero p {
-    font-size: 14rem;
+    font-size: 1rem;
+    line-height: normal;
   }
 }
 
@@ -1145,10 +1146,6 @@ a {
 
 .hero-text h1, p, button {
   margin-bottom: 18px;
-}
-
-.cta-button:hover {
-  background-color: #0891b2;
 }
 
 .hero-image {
@@ -1178,8 +1175,9 @@ a {
     margin: 0 auto;
   }
 
-  #hero p {
-    font-size: 1.2rem;
+  #hero-btn {
+    width: 230px;
+    height: 50px;
   }
 }
 
