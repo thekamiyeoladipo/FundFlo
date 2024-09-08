@@ -154,10 +154,10 @@ a {
     font-size: 1rem;
     line-height: normal;
    }
-   .custom-section::before {
-    display: none;
-   }
+  
   }
+
+
 
   #hero p {
     color: var(--color-black);
