@@ -218,17 +218,24 @@ a {
     }
   }
 
+  @media (max-width: 768px) {
+    .custom-section::before {
+      display: none;
+    } 
+  }
+
 
   /*  section why fundflo  */
 /* Set the section to full width and height, with a green background and rounded top corners */
 .custom-section {
-  width: 100vw;
-  height: 100vh;
-  background-color: #2ecc71; /* Green background color */
+  padding: 2rem 0;
+  width: 100%;
+  height: auto;
+  background-color: #0EF0C3; /* Green background color */
   position: relative;
-  border-top-left-radius: 50px; /* Rounded top left corner */
-  border-top-right-radius: 50px; /* Rounded top right corner */
-  overflow: hidden; /* Ensures content stays within the rounded corners */
+  border-top-left-radius: 70px; /* Rounded top left corner */
+  border-top-right-radius: 70px; /* Rounded top right corner */
+  overflow: hidden !important; /* Ensures content stays within the rounded corners */
 }
 
 /* Center the vector background */
@@ -237,9 +244,9 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px; /* Adjust the size as needed */
+  width: 1400px; /* Adjust the size as needed */
   height: 300px; /* Adjust the size as needed */
-  background: url('your-background-vector.svg') no-repeat center center;
+  background: url('/dist/img/Blue\ spiral\ Vector\ .svg') no-repeat center center;
   background-size: contain;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -255,7 +262,8 @@ a {
 
 /* Style the heading */
 .content-wrapper h1 {
-  color: white; /* White text color for visibility */
+  color: #000C4B;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -269,6 +277,7 @@ a {
 
 /* Style the individual cards */
 .card {
+  padding-top: 20px;
   background-color: transparent; /* Transparent background for SVG cards */
   border-radius: 10px;
   overflow: hidden;
@@ -281,7 +290,7 @@ a {
 .card img {
   width: 100%;
   height: auto;
-  max-width: 150px; /* Adjust max width for the SVGs */
+  max-width: 392px; /* Adjust max width for the SVGs */
 }
 
 /* Responsive design for smaller screens */
@@ -291,10 +300,17 @@ a {
   }
 
   .card img {
-      max-width: 100px; /* Adjust size of SVGs on smaller screens */
+      max-width: 392px; /* Adjust size of SVGs on smaller screens */
   }
 }
 
-
+.custom-section .cta-button {
+  width: 300px;
+  height: 70px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: 36px;
+  margin-top: 3rem;
+}
 
   

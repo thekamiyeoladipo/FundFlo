@@ -997,6 +997,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1213,6 +1218,10 @@ a {
     width: 230px;
     height: 50px;
   }
+
+  .custom-section::before {
+    display: none;
+  }
 }
 
 /*  section why fundflo  */
@@ -1220,16 +1229,17 @@ a {
 /* Set the section to full width and height, with a green background and rounded top corners */
 
 .custom-section {
-  width: 100vw;
-  height: 100vh;
-  background-color: #2ecc71;
+  padding: 2rem 0;
+  width: 100%;
+  height: auto;
+  background-color: #0EF0C3;
   /* Green background color */
   position: relative;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 70px;
   /* Rounded top left corner */
-  border-top-right-radius: 50px;
+  border-top-right-radius: 70px;
   /* Rounded top right corner */
-  overflow: hidden;
+  overflow: hidden !important;
   /* Ensures content stays within the rounded corners */
 }
 
@@ -1240,11 +1250,11 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 300px;
+  width: 1400px;
   /* Adjust the size as needed */
   height: 300px;
   /* Adjust the size as needed */
-  background: url('your-background-vector.svg') no-repeat center center;
+  background: url('/dist/img/Blue\ spiral\ Vector\ .svg') no-repeat center center;
   background-size: contain;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -1262,8 +1272,8 @@ a {
 /* Style the heading */
 
 .content-wrapper h1 {
-  color: white;
-  /* White text color for visibility */
+  color: #000C4B;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -1280,6 +1290,7 @@ a {
 /* Style the individual cards */
 
 .card {
+  padding-top: 20px;
   background-color: transparent;
   /* Transparent background for SVG cards */
   border-radius: 10px;
@@ -1294,7 +1305,7 @@ a {
 .card img {
   width: 100%;
   height: auto;
-  max-width: 150px;
+  max-width: 392px;
   /* Adjust max width for the SVGs */
 }
 
@@ -1307,9 +1318,18 @@ a {
   }
 
   .card img {
-    max-width: 100px;
+    max-width: 392px;
     /* Adjust size of SVGs on smaller screens */
   }
+}
+
+.custom-section .cta-button {
+  width: 300px;
+  height: 70px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: 36px;
+  margin-top: 3rem;
 }
 
 .hover\:text-gray-300:hover {
@@ -1331,7 +1351,5 @@ a {
     display: none;
   }
 }
-
-
 
   
