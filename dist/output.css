@@ -1220,17 +1220,16 @@ a {
 /* Set the section to full width and height, with a green background and rounded top corners */
 
 .custom-section {
-  padding: 4rem 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0EF0C3;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2ecc71;
   /* Green background color */
   position: relative;
-  border-top-left-radius: 70px;
+  border-top-left-radius: 50px;
   /* Rounded top left corner */
-  border-top-right-radius: 70px;
+  border-top-right-radius: 50px;
   /* Rounded top right corner */
-  overflow: hidden !important;
+  overflow: hidden;
   /* Ensures content stays within the rounded corners */
 }
 
@@ -1241,11 +1240,11 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 1776px;
+  width: 300px;
   /* Adjust the size as needed */
   height: 300px;
   /* Adjust the size as needed */
-  background: url('/dist/img/Blue\ spiral\ Vector\ .svg') no-repeat center center;
+  background: url('your-background-vector.svg') no-repeat center center;
   background-size: contain;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -1263,10 +1262,9 @@ a {
 /* Style the heading */
 
 .content-wrapper h1 {
-  color: var(--primary-color);
-  font-size: 60px;
+  color: white;
+  /* White text color for visibility */
   margin-bottom: 20px;
-  font-weight: 700;
 }
 
 /* Grid layout for the cards */
@@ -1295,8 +1293,8 @@ a {
 
 .card img {
   width: 100%;
-  height: 100%;
-  max-width: 392px;
+  height: auto;
+  max-width: 150px;
   /* Adjust max width for the SVGs */
 }
 
@@ -1309,7 +1307,7 @@ a {
   }
 
   .card img {
-    max-width: 350px;
+    max-width: 100px;
     /* Adjust size of SVGs on smaller screens */
   }
 }
@@ -1333,6 +1331,7 @@ a {
     display: none;
   }
 }
+
 
 
   
