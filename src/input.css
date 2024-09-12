@@ -494,6 +494,33 @@ a {
     }
   
 
-  .store-cards {
-    cursor: pointer;
+ /* Ensure the container is flexible and responsive */
+.store-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows the items to wrap on small screens */
+  gap: 10px; /* Optional: Add space between the images */
+  cursor: pointer;
+}
+
+/* Responsive image styling */
+.store-img {
+  width: 100%; /* Make the image width responsive */
+  max-width: 150px; /* Set a maximum width so it doesn't grow too large on bigger screens */
+  height: auto; /* Keep the aspect ratio */
+}
+
+@media (min-width: 768px) {
+
+  .store-img {
+    max-width: 200px; /* Adjust size for medium screens and above */
   }
+}
+
+@media (max-width: 768px) {
+  .store-cards {
+      justify-content: center; /* Center the items horizontally */
+      align-items: center; /* Align the items vertically */
+      margin-bottom: 20px;
+    }
+  }
+
