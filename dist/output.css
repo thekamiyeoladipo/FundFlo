@@ -612,6 +612,21 @@ video {
   inset: 0px;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -663,6 +678,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -787,6 +806,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1031,7 +1054,7 @@ video {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   text-decoration: none;
   list-style-type: none;
   font-family: "Inter", sans-serif !important;
@@ -1353,6 +1376,205 @@ a {
   margin-top: 3rem;
 }
 
+/* Testimonial section */
+
+/* General styles for the card */
+
+.testimonial {
+  padding: 2rem 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-white);
+}
+
+.testimonial-card {
+  display: flex;
+  background-color: #001f4d;
+  /* Dark blue background */
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 1250px;
+  margin: 2rem auto;
+  color: white;
+  align-items: center;
+  /* Vertically align the image and text */
+  justify-content: space-between;
+}
+
+.testimonial p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Profile image styling and positioning */
+
+.profile-container {
+  margin-left: 122px;
+  /* Margin of 122px to the left of the profile image */
+  display: flex;
+  align-items: center;
+  /* Vertically aligns the image */
+  position: relative;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  /* Make the image round */
+}
+
+/* Quotation mark icon styling */
+
+.quote-icon {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 147px;
+  height: 118.06px;
+  color: #3ee26b;
+  /* Green color for the quote icon */
+}
+
+@media (max-width: 768px) {
+  .quote-icon {
+    display: none;
+  }
+
+  .testimonial-text p 
+  {
+    text-align: center;
+  }
+}
+
+/* Text content styling and spacing */
+
+.testimonial-text {
+  margin-left: 72px;
+  /* Left margin of 72px */
+  margin-right: 115px;
+  /* Right margin of 115px */
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    /* Stack items vertically */
+    text-align: center;
+    /* Center-align the text */
+  }
+
+  .testimonial-text {
+    margin-left: 0;
+    /* Remove left margin for smaller screens */
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .profile-container {
+    margin-left: 0;
+    /* Remove left margin for smaller screens */
+  }
+}
+
+/* Go with the flow  */
+
+.go-section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.go-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.go-text {
+  max-width: 55%;
+  margin-right: 20px;
+}
+
+#go h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 55px;
+}
+
+@media (max-width: 768px) {
+  #go h1 {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #go p {
+    font-size: 1rem;
+    line-height: normal;
+  }
+}
+
+#go p {
+  color: var(--color-black);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.go-image {
+  max-width: 45%;
+  position: relative;
+  text-align: center;
+}
+
+.go-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .go-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .go-text, .go-image {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    margin: 0 auto;
+  }
+
+  #hero-btn {
+    width: 230px;
+    height: 50px;
+  }
+
+  #cta {
+    width: 230px;
+    height: 50px;
+  }
+}
+
+.store-cards {
+  cursor: pointer;
+}
+
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1372,5 +1594,3 @@ a {
     display: none;
   }
 }
-
-  

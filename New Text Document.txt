@@ -19,3 +19,97 @@
       <img src="img/hero-img.svg" alt="Description of the image" class="max-w-full h-auto">
     </div>
   </div>
+
+
+.go-section {
+padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.go-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.go-text {
+    max-width: 60%;
+    margin-right: 20px;
+  }
+
+ #go h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 55px;
+  }
+
+@media (max-width: 768px) {
+   #go h1 {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: normal;
+   }
+   #go p {
+    font-size: 1rem;
+    line-height: normal;
+   }
+  
+  }
+
+#go p {
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+ .go-image {
+    max-width: 50%;
+    position: relative;
+    text-align: center;
+  }
+
+.go-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ @media (max-width: 768px) {
+    .go-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .go-text, .go-image {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .cta-button {
+      margin: 0 auto;
+    }
+
+    #hero-btn {
+      width: 230px;
+      height: 50px;
+    }
+    #cta {
+      width: 230px;
+      height: 50px;
+    }
+  }
+
+
+
+
+
+
+
