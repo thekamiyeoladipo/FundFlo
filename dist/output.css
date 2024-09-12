@@ -1206,7 +1206,7 @@ a {
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 43px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
   }
 
@@ -1372,6 +1372,12 @@ a {
 /* Responsive design for smaller screens */
 
 @media (max-width: 768px) {
+  #custom h1 {
+    font-size: 43px;
+    font-weight: 900;
+    line-height: normal;
+  }
+
   .card-grid {
     grid-template-columns: 1fr;
     /* Stack cards vertically on smaller screens */
@@ -1457,6 +1463,12 @@ a {
     display: none;
   }
 
+  #testimonial h1 {
+    font-size: 43px;
+    font-weight: 900;
+    line-height: normal;
+  }
+
   .testimonial-text p 
   {
     text-align: center;
@@ -1532,7 +1544,7 @@ a {
 @media (max-width: 768px) {
   #go h1 {
     font-size: 43px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
   }
 
