@@ -32,7 +32,9 @@ a {
 
 #navlinks a {
   transition: all.2s ease;
-  margin: 0 33px;
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-bottom: 1rem;
 }
 
 #navlinks a:hover {
