@@ -572,7 +572,7 @@ body {
 .link-pair {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adjust gap between links in the same pair */
+  gap: 5px; /* Adjust gap between links in the same pair */
 }
 
 .link-pair a {
@@ -632,6 +632,9 @@ footer hr {
     text-align: center;
   }
   
+  .link-pair {
+    gap: 0;
+  }
   .footer a {
     margin: 10px 0;
   }
@@ -647,9 +650,14 @@ footer hr {
 
   .footer-contact {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     gap: 1.5rem;
   }
+
+  .footer-contact a {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
 }
-
-
+}
