@@ -636,15 +636,17 @@ footer hr {
     gap: 0;
   }
   .footer a {
-    margin: 10px 0;
+    margin: 10px auto;
   }
 
   .footer hr {
+    align-self: center;
     width: 100%;
   }
 
   .footer-bottom {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
 
